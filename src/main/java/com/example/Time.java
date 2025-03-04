@@ -58,5 +58,10 @@ public class Time {
         return ore * 3600 + minuti * 60 + secondi;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%02d:%02d:%02d", ore, minuti, secondi);
+    }   
+
 
 }
