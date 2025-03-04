@@ -63,5 +63,11 @@ public class Time {
         return String.format("%02d:%02d:%02d", ore, minuti, secondi);
     }   
 
-
+    public void addSecondi(int secondi) {
+        int totSecondi = convertiSecondi() + secondi;
+        this.ore = totSecondi / 3600;
+        totSecondi %= 3600;
+        this.minuti = totSecondi / 60;
+        this.secondi = totSecondi % 60;
+    }
 }
