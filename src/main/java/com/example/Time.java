@@ -42,6 +42,21 @@ public class Time {
         return secondi;
     }
 
+    public void setOre(int ore) {
+        this.ore = ore;
+    }
+
+    public void setMinuti(int minuti) {
+        this.minuti = minuti;
+    }
+
+    public void setSecondi(int secondi) {
+        this.secondi = secondi;
+    }
+
+    public int convertiSecondi() {
+        return ore * 3600 + minuti * 60 + secondi;
+    }
 
 
 }
